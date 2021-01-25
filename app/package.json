@@ -1,0 +1,23 @@
+{
+  "name": "reg-help",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Martin Ottersland",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon -w index.ts -x yarn build",
+    "build": "tsc --project tsconfig.json && node src/index.js"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/morgan": "^1.9.2",
+    "@types/node": "^14.14.22",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
